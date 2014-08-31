@@ -13,3 +13,7 @@ var Model =  ampersandModel.extend({
 model = new Model();
 
 model.fetch()
+
+model.on('fetch', function(data){
+  console.log(this);
+});
